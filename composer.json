@@ -13,8 +13,8 @@
     ],
     "require": {
         "php": "^7.1",
-        "illuminate/notifications": "^5.3|^6.0",
-        "illuminate/support": "^5.1|^6.0",
+        "illuminate/notifications": "^6.0",
+        "illuminate/support": "^6.0",
         "minishlink/web-push": "^5.0"
     },
     "require-dev": {
