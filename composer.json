@@ -1,5 +1,5 @@
 {
-    "name": "BoyeMagnus/webpush",
+    "name": "boyemagnus/webpush",
     "description": "Web Push Notifications driver for Laravel.",
     "homepage": "https://github.com/BoyeMagnus/webpush",
     "license": "MIT",
