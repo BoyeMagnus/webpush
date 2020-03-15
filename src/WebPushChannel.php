@@ -2,9 +2,9 @@
 
 namespace NotificationChannels\WebPush;
 
-use Minishlink\WebPush\WebPush;
-use Minishlink\WebPush\Subscription;
 use Illuminate\Notifications\Notification;
+use Minishlink\WebPush\Subscription;
+use Minishlink\WebPush\WebPush;
 
 class WebPushChannel
 {
@@ -39,7 +39,7 @@ class WebPushChannel
     public function send($notifiable, Notification $notification)
     {
         /** @var \Illuminate\Database\Eloquent\Collection $subscriptions */
-        $subscriptions = $notifiable->routeNotificationFor('WebPush');
+        $subscriptions = $notifiable->routeNotificationFor('WebPush', $notification);
 
         if (empty($subscriptions)) {
             return;
